@@ -33,8 +33,8 @@ Roles included both development and devops. Highlights:
 - Also responsible for development of Rails projects comprising the next generation of Turbosquid's marketplace.
 - Pre-kubernetes designed and implemented an LXC-based CD system using node agents built in Golang, and utilizng S3, Git, Puppet and (later) Ansible for container provisioning.
 
-### But wait -- there's more
-My career in tech stretches back some years. For the sake of brevity, I have include only the last dozen or so. I'd be happy to provide more job history on request.
+## Additional Professional Experience
+My career in tech stretches back some years. For the sake of brevity and relevance, I have include only the last 11 or so. I'd be happy to provide more job history on request.
 
 ## Patents/Publications
 
