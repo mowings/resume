@@ -34,7 +34,7 @@ Roles included both development and devops. Highlights:
 - Pre-kubernetes designed and implemented an LXC-based CD system using node agents built in Golang, and utilizng S3, Git, Puppet and (later) Ansible for container provisioning.
 
 ### But wait -- there's more
-My career in tech stretches back nearly 35 years. I have include only the last dozen or so for the sake of brevity. I have around 15 years of experience with AWS, as well as Postgres, 
+My career in tech stretches back some years. For the sake of brevity, I have include only the last dozen or so. I'd be happy to provide more job history on request.
 
 ## Patents/Publications
 
