@@ -19,7 +19,7 @@ Highlights:
 - Ongoing management upgrades and troubleshooting of large Opensearch and Aurora Postgres systems.
 - Architected a disaster recovery plan for 3d and larger Shutterstock Catalog infrastructure.
 
-All of my work with Shutterstock is also done with an eye toward reducing AWS costs wherever possible, while stil maintaining operational excellence.
+All of my work with Shutterstock is also done with an eye toward reducing AWS costs wherever possible to maximize our ROI in the cloud, while still maintaining operational excellence. Tools used include the Cost Explorer, CloudCheckr, Kubecost,  and AWS Quicksight
 
 ### Turbosquid - Senior Engineer (10.2012 - 02.2021)
 
