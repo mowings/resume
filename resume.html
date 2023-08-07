@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>resume.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 align="center"> Michael Owings </h1>
+<p>Experienced engineer bringing to the table a wide range of knowledge and expertise in both devops and general software development. Projects have ranged from large complex distributed systems to tiny, embedded real-time platforms. Deeply involved in designing and building release, deployment and monitoring infrastructure for large e-commerce sites, both on-prem and in the cloud, as well as overseeing operations of same.</p>
+<h2 id="experience">Experience</h2>
+<h3 id="shutterstock---principal-engineer-022021---present">Shutterstock - Principal Engineer (02.2021 - present)</h3>
+<p>In my current role I focus on optimizing much of the 3D aspect of Shutterstock's AWS-based infrastructure. Platforms and systems include Kubernetes, AWS Aurora, Opensearch, and more. Most observability via NewRelic, Cloudwatch, ELK, and Prometheus/Grafana. Leveraged Terraform, Atlantis, and CloudFormation for IaC.</p>
+<p>Highlights:</p>
+<ul>
+<li>Integrated 3D infrastructure into Shutterstock's larger system, migrating 350 repositories to enterprise GitHub. Replaced Hubot with ArgoCD, Github Actions, and Helm.</li>
+<li>Shifted from secret storage in Zookeeper and/or Vault to a workflow comprising Github Actions, Amazon Secrets Manager, and Kubernetes Extrnal Secrets for secrets management.</li>
+<li>Responsible for continuous coding/improving/deploying our 3D workflow app, for mixed AWS and on-premises environments. (Golang)</li>
+<li>Migrated logging from SumoLogic to NewRelic, reducing costs by 80% while improving observability.</li>
+<li>Transitioned multiple services from ec2 hosts to EKS, saving both cost and administrative overhead.</li>
+<li>Led smooth migration of Turbosquid stack from on-premises bare-metal Kubernetes to Amazon EKS, with minimal downtime (15 mins). Transitioned databases and services including Postgres, Elasticsearch, RabbitMQ, Memcached, Redis and more.</li>
+<li>Work to improve local code development experiences with tools like Garden.io and others.</li>
+<li>Ongoing management upgrades and troubleshooting of large Opensearch and Aurora Postgres systems.</li>
+<li>Architected a disaster recovery plan for 3d and larger Shutterstock Catalog infrastructure.</li>
+</ul>
+<p>All of my work with Shutterstock is also done with an eye toward reducing AWS costs wherever possible, while stil maintaining operational excellence.</p>
+<h3 id="turbosquid---senior-engineer-102012---022021">Turbosquid - Senior Engineer (10.2012 - 02.2021)</h3>
+<p>Roles included both development and devops. Highlights:</p>
+<ul>
+<li>Migrated the bulk of the Turbosquid application stack to on-prem bare-metal Kubernetes. This included multiple Ruby/Rails, PHP and Golang applications, as well as PostgreSQL, Elasticsearch, RabbitMQ, Redis and Memcached. Tools: Ansible, Terraform.</li>
+<li>Designed and implemented a DR plan to move rapidly from our Miami datacenter to AWS in the event of an emergency. This plan was tested quarterly. Tools used include CloudFormation, Ansible and some bespoke code.</li>
+<li>Continued to design and implement multiple tools to manage our infrastructure. Among others, these include Scylla -- a manager for scheduled tasks, StackAmigo, a system that allows developers to quickly deploy application stacks to Kubernetes,  and more. These tools were wtitten primarily in Golang, with soom tooling written in Ruby.</li>
+<li>Responsible for onging operation of most datacenter infrastructure, including Postgres, Elasticsearch, etc. Implemented ELK and Graphana/Prometheus for observability and alerting.</li>
+<li>Built and maintained tools to manage complex 3d workflows (Golang, primarily).</li>
+<li>Also responsible for development of Rails projects comprising the next generation of Turbosquid's marketplace.</li>
+<li>Pre-kubernetes designed and implemented an LXC-based CD system using node agents built in Golang, and utilizng S3, Git, Puppet and (later) Ansible for container provisioning.</li>
+</ul>
+<h3 id="but-wait----theres-more">But wait -- there's more</h3>
+<p>My career in tech stretches back some years. For the sake of brevity, I have include only the last dozen or so. I'd be happy to provide more job history on request.</p>
+<h2 id="patentspublications">Patents/Publications</h2>
+<ul>
+<li>Robot DNA: Building Robot Drive Trains (book with Dennis Clark, ed. Gordon McComb), McGraw-Hill Professional, October 2002.</li>
+<li>Co-inventor, US Patent No. 6,249,883, System and Method for Monitoring Domain Controllers</li>
+</ul>
+<h2 id="contactlinks">Contact/Links</h2>
+<ul>
+<li><strong>email</strong>: tafkaks@gmail.com <strong>phone</strong>: +1(985)xxx-xxxx</li>
+<li><strong>linked in</strong>: <a href="https://www.linkedin.com/in/michael-owings-a346227/">/in/mowings</a> <strong>github</strong>: <a href="https://github.com/mowings">mowings</a></li>
+</ul>
+
+</body>
+</html>
