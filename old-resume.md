@@ -84,7 +84,7 @@ Developed a variety of small manufacturing systems software under DOS, Windows, 
 
 Wrote the user manual for the Vendor Quality System. A complex HP-3000 – based manufacturing system used to track failure rates on out-sourced components. Responsible for a number of other pieces of manufacturing systems documentation
 
-Selected Patents and Publications
+## Selected Patents and Publications
 Robot DNA: Building Robot Drive Trains (book with Dennis Clark, ed. Gordon McComb), McGraw-Hill Professional, October 2002.
 
 Co-inventor, US Patent No. 6,249,883, System and Method for Monitoring Domain Controllers
