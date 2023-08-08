@@ -41,7 +41,7 @@ For brevity and relevance, focusing on the past 11 years. Additional history ava
 - **DevOps Tools:** Kubernetes, Terraform, Ansible, Helm, ArgoCD, Docker
 - **Cloud Platforms:** AWS, AWS Aurora, Amazon EKS
 - **Monitoring:** NewRelic, Cloudwatch, ELK Stack, Prometheus/Grafana
-- **Languages:** Golang, Ruby, C/C++, Lua, Python and more
+- **Languages:** Golang, Ruby, JS, C/C++, Lua, Python and more
 - **Databases:** PostgreSQL (AWS Aurora and bare metal), Mongo, Redis, Memcached. Some SQLServer
 - **IaC:** CloudFormation, Terraform, Ansible, Puppet
 - **Version Control:** Git, GitHub, GitHub Enterprise
