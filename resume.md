@@ -1,47 +1,56 @@
-<h1 align="center"> Michael Owings </h1>
+# Michael Owings
+**Email:** tafkaks@gmail.com | **Phone:** +1(985)xxx-xxxx
+**LinkedIn:** [/in/mowings](https://www.linkedin.com/in/michael-owings/) | **GitHub:** [mowings](https://github.com/mowings)
 
- Experienced engineer bringing to the table a wide range of knowledge and expertise in both devops and general software development. Projects have ranged from large complex distributed systems to tiny, embedded real-time platforms. Deeply involved in designing and building release, deployment and monitoring infrastructure for large e-commerce sites, both on-prem and in the cloud, as well as overseeing operations of same.
+## Summary
+Experienced engineer with a broad background in DevOps and general software development. Skilled in optimizing AWS-based infrastructures, managing large-scale systems, and driving operational excellence. Proficient in Kubernetes, AWS services, Terraform, and more. Committed to reducing costs while maintaining top-notch performance.
 
 ## Experience
-### Shutterstock - Principal Engineer (02.2021 - present)
 
-In my current role I focus on optimizing much of the 3D aspect of Shutterstock's AWS-based infrastructure. Platforms and systems include Kubernetes, AWS Aurora, Opensearch, and more. Most observability via NewRelic, Cloudwatch, ELK, and Prometheus/Grafana. Leveraged Terraform, Atlantis, and CloudFormation for IaC.
-
-Highlights:
-
-- Integrated 3D infrastructure into Shutterstock's larger system, migrating 350 repositories to enterprise GitHub. Replaced Hubot with ArgoCD, Github Actions, and Helm. 
-- Shifted from secret storage in Zookeeper and/or Vault to a workflow comprising Github Actions, Amazon Secrets Manager, and Kubernetes Extrnal Secrets for secrets management.
-- Responsible for continuous coding/improving/deploying our 3D workflow app, for mixed AWS and on-premises environments. (Golang)
-- Migrated logging from SumoLogic to NewRelic, reducing costs by 80% while improving observability.
-- Transitioned multiple services from ec2 hosts to EKS, saving both cost and administrative overhead.
-- Led smooth migration of Turbosquid stack from on-premises bare-metal Kubernetes to Amazon EKS, with minimal downtime (15 mins). Transitioned databases and services including Postgres, Elasticsearch, RabbitMQ, Memcached, Redis and more.
-- Work to improve local code development experiences with tools like Garden.io and others.
-- Ongoing management upgrades and troubleshooting of large Opensearch and Aurora Postgres systems.
-- Architected a disaster recovery plan for 3d and larger Shutterstock Catalog infrastructure.
-
-All of my work with Shutterstock is also done with an eye toward reducing AWS costs wherever possible to maximize our ROI in the cloud, while still maintaining operational excellence. Tools used include the Cost Explorer, CloudCheckr, Kubecost,  and AWS Quicksight
+### Shutterstock - Principal Engineer (02.2021 - Present)
+- Managed improvments and enhancements to Shutterstock's larger infrastructure (around 20 Kubernetes clusters with 1200 workers, and another 800 or so EC2 instances)
+- Optimized 3D infrastructure within Shutterstock's AWS-based ecosystem.
+- Integrated 3D systems, migrating 350 repositories to enterprise GitHub. Replaced Hubot-based CD with with ArgoCD, GitHub Actions, and Helm.
+- Improved secret management by transitioning from Zookeeper/Vault to GitHub Actions, Amazon Secrets Manager, and Kubernetes External Secrets.
+- Led development of 3D workflow app for AWS and on-prem environments (multiple Golang services).
+- Migrated logging from SumoLogic to NewRelic, reducing costs by 80% and enhancing observability.
+- Successfully transitioned services from EC2 hosts to EKS, reducing costs and administrative overhead.
+- Led migration of Turbosquid stack to Amazon EKS, including databases and services (Postgres, Elasticsearch, RabbitMQ, etc.).
+- Enhanced local development experience using Garden.io and other tools.
+- Managed upgrades and troubleshooting of Opensearch and Aurora Postgres systems comprising terabytes of application data.
+- Architected disaster recovery plan for 3D and Shutterstock Catalog infrastructure.
+- Utilized tools like Cost Explorer, CloudCheckr, Kubecost, and AWS Quicksight dashboards to optimize AWS costs.
 
 ### Turbosquid - Senior Engineer (10.2012 - 02.2021)
-
-Roles included both development and devops. Highlights:
-
-- Migrated the bulk of the Turbosquid application stack to on-prem bare-metal Kubernetes. This included multiple Ruby/Rails, PHP and Golang applications, as well as PostgreSQL, Elasticsearch, RabbitMQ, Redis and Memcached. Tools: Ansible, Terraform.
-- Designed and implemented a DR plan to move rapidly from our Miami datacenter to AWS in the event of an emergency. This plan was tested quarterly. Tools used include CloudFormation, Ansible and some bespoke code.
-- Continued to design and implement multiple tools to manage our infrastructure. Among others, these include Scylla -- a manager for scheduled tasks, StackAmigo, a system that allows developers to quickly deploy application stacks to Kubernetes,  and more. These tools were wtitten primarily in Golang, with soom tooling written in Ruby.
-- Responsible for onging operation of most datacenter infrastructure, including Postgres, Elasticsearch, etc. Implemented ELK and Graphana/Prometheus for observability and alerting.
-- Built and maintained tools to manage complex 3d workflows (Golang, primarily). 
-- Also responsible for development of Rails projects comprising the next generation of Turbosquid's marketplace.
-- Pre-kubernetes designed and implemented an LXC-based CD system using node agents built in Golang, and utilizng S3, Git, Puppet and (later) Ansible for container provisioning.
+- Migrated Turbosquid's application stack to on-prem bare-metal Kubernetes. Utilized Ansible and Terraform for multiple applications and critical components.
+- Designed and regularly tested disaster recovery plan for swift migration from Miami data center to AWS. Employed CloudFormation, Ansible, and custom code.
+- Developed infrastructure management tools like Scylla (distributed task scheduling and execution) and StackAmigo (Kubernetes stack deployment for developers) using Golang and Ruby.
+- Managed data center infrastructure, implementing ELK and Grafana/Prometheus for observability.
+- Streamlined complex 3D workflows using Golang applications.
+- Architected and built Rails projects for Turbosquid's marketplace evolution.
+- Pre-Kubernetes, built LXC-based CD system using Golang node agents and AWS services and a git-based workflow.
 
 ## Additional Professional Experience
-My career in tech stretches back some years. For the sake of brevity and relevance, I have include only the last 11 or so. I'd be happy to provide more job history on request.
+For brevity and relevance, focusing on the past 11 years. Additional history available upon request.
 
 ## Patents/Publications
+* Co-author, "Robot DNA: Building Robot Drive Trains" (with Dennis Clark, ed. Gordon McComb), McGraw-Hill Professional, October 2002.
+* Co-inventor, US Patent No. 6,249,883, "System and Method for Monitoring Domain Controllers"
 
-* Robot DNA: Building Robot Drive Trains (book with Dennis Clark, ed. Gordon McComb), McGraw-Hill Professional, October 2002.
-* Co-inventor, US Patent No. 6,249,883, System and Method for Monitoring Domain Controllers
-
-## Contact/Links ### 
-* **email**: tafkaks@gmail.com **phone**: +1(985)xxx-xxxx
-* **linked in**: [/in/mowings](https://www.linkedin.com/in/michael-owings-a346227/) **github**: [mowings](https://github.com/mowings)
-
+## Skills
+- **DevOps Tools:** Kubernetes, Terraform, Ansible, Helm, ArgoCD, Docker
+- **Cloud Platforms:** AWS, AWS Aurora, Amazon EKS
+- **Monitoring:** NewRelic, Cloudwatch, ELK Stack, Prometheus/Grafana
+- **Languages:** Golang, Ruby, C/C++, Lua, Python and more
+- **Databases:** PostgreSQL (AWS Aurora and bare metal), Mongo, Redis, Memcached. Some SQLServer
+- **IaC:** CloudFormation, Terraform, Ansible, Puppet
+- **Version Control:** Git, GitHub, GitHub Enterprise
+- **Containerization:** Docker, Kubernetes, some RKT
+- **Secrets Management:** Amazon Secrets Manager, Kubernetes External Secrets, Vault
+- **CI/CD:** Jenkins, Github Actions, ArgoCD, Helm Charts
+- **Log Management:** ELK Stack, NewRelic Logs, Cloudwatch
+- **Observability:** Grafana, Prometheus, NewRelic Insights
+- **Development Tools:** Visual Studio Code, Garden.io, Vim, etc
+- **Project Management:** JIRA, Confluence
+- **Cloud Cost Management:** AWS Cost Explorer, CloudCheckr, Kubecost, AWS Quicksight
+- **Agile Methodologies:** Scrum
