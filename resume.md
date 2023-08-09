@@ -42,6 +42,7 @@ For brevity and relevance, focusing on the past 11 years. Additional history ava
 - **Cloud Platforms:** AWS, AWS Aurora, Amazon EKS
 - **Monitoring:** NewRelic, Cloudwatch, ELK Stack, Prometheus/Grafana
 - **Languages:** Golang, Ruby, JS, C/C++, Lua, Python and more
+- **Frameworks** Rails, Sinatra, React
 - **Databases:** PostgreSQL (AWS Aurora and bare metal), Mongo, Redis, Memcached. Some SQLServer
 - **IaC:** CloudFormation, Terraform, Ansible, Puppet
 - **Version Control:** Git, GitHub, GitHub Enterprise
