@@ -1,5 +1,6 @@
+
 # Michael Owings
-**Email:** tafkaks@gmail.com | **Phone:** +1(985)xxx-xxxx
+**Email:** tafkaks@gmail.com | **Phone:** +1(985)807-XXXX
 **LinkedIn:** [/in/mowings](https://www.linkedin.com/in/michael-owings/) | **GitHub:** [mowings](https://github.com/mowings)
 
 ## Summary
